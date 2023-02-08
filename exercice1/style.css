@@ -1,0 +1,49 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main {
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(34, 31, 31);
+    border-radius: 5px;
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20px;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-top: 5px;
+    color: rgb(207, 168, 168);
+    font-style: italic;
+    font-size: 14px;
+    display: none;
+}

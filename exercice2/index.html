@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Commande ta pizza sur-mesure !</h1>
+    </header>
+    <main id="main">
+        <div id="form">
+            <form class="form" id="contactForm">
+                <div class="coordonnees">
+                    <h2>T'es qui toi ?</h2>
+
+                    <div id="bloc">
+                        <h3>C'est qui qui commande ?</h3>
+
+                        <div id="input">
+                            <input type="text" name="nameInput" id="nameInput" placeholder="Nom">
+                            <label class="error-message" for="nameInput" id="nameError">J'ai besoin de ton nom...</label>
+                        </div>
+                    </div>
+
+
+                    <h3>J'te livre où ?</h3>
+
+                    <div id="bloc">
+                        <div id="sousbloc">
+                            <div id="input">
+                                <input type="number" name="numberInput" id="numberInput" placeholder="N° de rue" style="-moz-appearance: textfield">
+                                <label class="error-message" for="numberInput" id="numberError">Ça ne me dit pas où tu habites !</label>
+                            </div>
+
+                            <div id="input">
+                                <input type="text" name="roadInput" id="roadInput" placeholder="Rue">
+                                <label class="error-message" for="roadInput" id="roadError">Ça ne me dit pas où tu habites !</label>
+                            </div>
+                        </div>
+
+                        <div id="sousbloc">
+                            <div id="input">
+                                <input type="number" name="zipCodeInput" id="zipCodeInput" placeholder="Code postal" style="-moz-appearance: textfield">
+                                <label class="error-message" for="zipCodeInput" id="zipCodeError">Ça ne me dit pas où tu habites !</label>
+                            </div>
+
+                            <div id="input">
+                                <input type="text" name="cityInput" id="cityInput" placeholder="Ville">
+                                <label class="error-message" for="cityInput" id="cityError">Ça ne me dit pas où tu habites !</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bloc">
+                        <h3>C'est quoi ton 06 ?</h3>
+                        <div id="input">
+                            <input type="tel" name="telInput" id="telInput" placeholder="Numéro de téléphone">
+                            <label class="error-message" for="telInput" id="telError">Promis, c'est pas pour un date</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recette">
+                    <h2>Passons au plus important ...</h2>
+
+                    <div id="bloc">
+                        <h3>Choisis la taille de ta pizza</h3>
+                        <div id="select">
+                            <select name="sizeSelect" id="sizeSelect" required>
+                                <option value=" ">--Taille--</option>
+                                <option value="small">Petite</option>
+                                <option value="medium">Moyenne</option>
+                                <option value="large">Grande</option>
+                            </select>
+                            <label class="error-message" for="sizeSelect" id="sizeError">T'as une grosse faim ou pas ?</label>
+                        </div>
+                    </div>
+
+                    <div id="bloc">
+                        <h3>On part sur quelle base ?</h3>
+                        <div id="select">
+                            <select name="sauce" id="sauceSelect" required>
+                                <option value=" ">--Base--</option>
+                                <option value="sauce tomate">Sauce tomate</option>
+                                <option value="creme fraiche">Crème fraiche</option>
+                            </select>
+                            <label class="error-message" for="sauce" id="sauceError">Sans sauce, ça risque d'être sec...</label>
+                        </div>
+                    </div>
+
+                    <h3 class="ingredients">Choisis tes ingrédients</h3>
+
+                    <div id="ingredients">
+                        <h4>Viandes</h4>
+                            <div id="checkbox">
+                                <div class="line"><input type="checkbox" name="jambon" id="jambon"><label for="jambon">Jambon</label></div>
+                                <div class="line"><input type="checkbox" name="chorizo" id="chorizo"><label for="chorizo">Chorizo</label></div>
+                                <div class="line"><input type="checkbox" name="hachee" id="hachee"><label for="hachee">Viande hachée</label></div>
+                                <div class="line"><input type="checkbox" name="lardons" id="lardons"><label for="lardons">Lardons</label></div>
+                                <div class="line"><input type="checkbox" name="bacon" id="bacon"><label for="bacon">Bacon</label></div>
+                                <div class="line"><input type="checkbox" name="merguez" id="merguez"><label for="merguez">Merguez</label></div>
+                            </div>
+                        <h4>Fromages</h4>
+                            <div id="checkbox">
+                                <div class="line"><input type="checkbox" name="mozza" id="mozza"><label for="mozza">Mozzarella</label></div>
+                                <div class="line"><input type="checkbox" name="emmental" id="emmental"><label for="emmental">Emmental</label></div>
+                                <div class="line"><input type="checkbox" name="chevre" id="chevre"><label for="chevre">Chèvre</label></div>
+                                <div class="line"><input type="checkbox" name="raclette" id="raclette"><label for="raclette">Raclette</label></div>
+                                <div class="line"><input type="checkbox" name="bleu" id="bleu"><label for="bleu">Bleu</label></div>
+                            </div>
+                        <h4>Légumes</h4>
+                        <div id="checkbox">
+                                <div class="line"><input type="checkbox" name="tomates" id="tomates"><label for="tomates">Tomates</label></div>
+                                <div class="line"><input type="checkbox" name="champignons" id="champignons"><label for="champignons">Champignons</label></div>
+                                <div class="line"><input type="checkbox" name="oignons" id="oignons"><label for="oignons">Oignons</label></div>
+                                <div class="line"><input type="checkbox" name="pdt" id="pdt"><label for="pdt">Pommes de terre</label></div>
+                                <div class="line"><input type="checkbox" name="poivrons" id="poivrons"><label for="poivrons">Poivrons</label></div>
+                                <div class="line"><input type="checkbox" name="olives" id="olives"><label for="olives">Olives</label></div>
+                            </div>
+                        <h4>Compléments</h4>
+                          <div id="checkbox">
+                                <div class="line"><input type="checkbox" name="oeuf" id="oeuf"><label for="oeuf">Oeuf</label></div>
+                                <div class="line"><input type="checkbox" name="miel" id="miel"><label for="miel">Miel</label></div>
+                                <div class="line"><input type="checkbox" name="ananas" id="ananas"><label for="ananas">Ananas</label></div>
+                            </div>
+                    </div>
+
+                    <div id="message">
+                        <label for="commentaire">Une demande spéciale, un commentaire ? Laisse nous ton message ici</label>
+                        <textarea name="commentaire" id="commentaire" cols="70" rows="10" placeholder="Vos pizzas sont les meilleures !" ></textarea>
+                    </div>
+                </div>
+                <div id="boutons">
+                    <input type="reset" value="Laisse tomber..." id="annulation">
+                    <button id="validation">C'est parti !</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

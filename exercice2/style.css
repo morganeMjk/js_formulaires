@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(37, 32, 32);
+    color: rgb(236, 234, 234);
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-image: url(img/fond1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 80px;
+    box-shadow: 1px 1px 10px black;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
+}
+
+main {
+    background-image: url(img/fond2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+
+form {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5760504030713849) 100%, rgba(255,255,255,0.5844537644159227) 100%);
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+h2 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.coordonnees input {
+    width: 60%;
+    height: 30px;
+    padding-left: 10px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    background: none;
+}
+
+.error-message {
+    text-align: center;
+    display: none;
+    font-style: italic;
+}
+
+#select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+select {
+    width: 40%;
+    margin: auto;
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    background: none;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+#ingredients input {
+    width: 12px;
+    margin-right: 20px;
+}
+
+.line {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#message {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    width: 70%;
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    background: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+button, #annulation {
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    background: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+#boutons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+    .line {
+        margin-left: 100px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    header {
+        background-size: cover;
+        height: 300px;
+        padding: 50px 300px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .coordonnees input {
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #bloc {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .coordonnees h3 {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    #input {
+        margin: 0px;
+    }
+
+    select {
+        width: 200px;
+        height: 40px;
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    .recette h3 {
+        margin: 0px;
+    }
+
+    #select {
+        margin: 0px;
+    }
+
+    h4 {
+        margin-left: 300px;
+        font-size: 20px;
+    }
+
+    #ingredients input {
+        width: 15px;
+    }
+
+    .line {
+        margin-left: 450px;
+    }
+
+    #checkbox label {
+        font-size: 20px;
+    }
+
+    #message label {
+        font-size: 25px;
+    }
+}

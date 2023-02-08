@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <form class="form" id="contactForm">
+            <div id="input">
+                <input type="text" name="nameInput" id="nameInput" placeholder="Nom">
+                <label class="error-message" for="nameInput" id="nameError">Veuillez renseigner votre nom.</label>
+            </div>
+            <div id="input">
+                <input type="email" name="emailInput" id="emailInput" placeholder="Adresse mail">
+                <label class="error-message" for="emailInput" id="emailError">Veuillez renseigner une adresse mail valide.</label>
+            </div>
+            <div id="input">
+                <input type="tel" name="telInput" id="telInput" placeholder="Numéro de téléphone">
+                <label class="error-message" for="telInput" id="telError">Veuillez renseigner un numéro de téléphone valide.</label>
+            </div>
+            <div id="input">
+                <input type="password" name="passwordInput" id="passwordInput" placeholder="Mot de passe">
+                <label class="error-message" for="passwordInput" id="passwordError">Veuillez renseigner un mot de passe valide.</label>
+            </div>
+            <button>Suivant</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
